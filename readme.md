@@ -1,3 +1,3 @@
 # How do! 👋
 
-This is the repo for my new wip website. Once there is actual _content_, I'm going to deploy it somewhere and update it as I go.
+I'm a web developer based in Cumbria, UK. I don't really do much coding outside of work hours, but I'm currenly working on a new personal website. I have an [old cyberpunk one](https://bl-rd.github.io/bl-rd-archive/) you can look at if you fancy 🙂.
