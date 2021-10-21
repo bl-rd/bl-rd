@@ -1,0 +1,6 @@
+{
+  "url": "/readme/",
+  "inputPath": "./readme.md",
+  "outputPath": "_site/readme/index.html",
+  "content": "<h1>How do! 👋</h1>\n<p>This is the repo for my <a href=\"https://bl-rd.github.io/bl-rd/\">website</a>. It uses <a href=\"https://cobalt-org.github.io/\">Cobalt</a> as the site generator.</p>\n"
+}
