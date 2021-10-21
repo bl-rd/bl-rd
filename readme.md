@@ -1,3 +1,3 @@
 # How do! 👋
 
-This is the repo for my [website](https://bl-rd.github.io/bl-rd/). It uses [Cobalt](https://cobalt-org.github.io/) as the site generator.
+This is the repo for my new wip website. Once there is actual _content_, I'm going to deploy it somewhere and update it as I go.
