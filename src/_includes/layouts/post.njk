@@ -6,7 +6,7 @@
 
     {# Only load the code snippet if the post says so #}
     {% if code_snippet %}
-    <link href="{{ config.prism }}" rel="stylesheet">
+      {% include "meta/prism.njk" %}
     {% endif %}
 
     <title>{{ title }}</title>
