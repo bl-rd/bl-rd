@@ -4,7 +4,7 @@ layout: layouts/post.njk
 date: Last Modified
 ---
 
-Last updated: <time datetime="{{ page.date | isoString }}">Time!</time>
+Last updated: <time datetime="{{ page.date | isoString }}">{{ page.date | readableDate }}</time>
 
 ## S'up
 

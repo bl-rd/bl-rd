@@ -1,4 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
   // enable syntax highlighting
@@ -8,5 +9,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('isoString', dateObj => {
     const date = new Date(dateObj);
     return date.toISOString();
+  });
+
+  // Date format filter
+  eleventyConfig.addFilter('readableDate', dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("T, d MMMM yyyy");
   });
 };
