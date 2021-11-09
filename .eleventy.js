@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("T, d MMMM yyyy");
   });
 
+  // pass through files
+  eleventyConfig.addPassthroughCopy('src/assets/fonts');
+
   return {
     templateFormats: ['njk', 'md', 'html', '11ty.js']
   };
