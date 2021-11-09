@@ -1,0 +1,6 @@
+@import '_properties.css';
+@import '_fonts.css';
+
+* {
+  font-family: 'blocktopiamedium', monospace;
+}

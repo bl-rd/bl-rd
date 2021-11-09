@@ -15,4 +15,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("T, d MMMM yyyy");
   });
+
+  return {
+    templateFormats: ['njk', 'md', 'html', '11ty.js']
+  };
 };
