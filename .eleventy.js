@@ -18,8 +18,5 @@ module.exports = function(eleventyConfig) {
 
   // pass through files
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
-
-  return {
-    templateFormats: ['njk', 'md', 'html', '11ty.js']
-  };
+  eleventyConfig.addPassthroughCopy('src/assets/styles/compiled.css');
 };

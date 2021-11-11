@@ -4,4 +4,9 @@
 * {
   font-family: 'blocktopiamedium', monospace;
   font-size: 2rem;
+  color: var(--main-colour);
+}
+
+body {
+  background-color: var(--background-colour);
 }
