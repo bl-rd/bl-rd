@@ -9,4 +9,6 @@
 
 body {
   background-color: var(--background-colour);
+  width: clamp(850px, 80vw, 90%);
+  margin: 0 auto;
 }

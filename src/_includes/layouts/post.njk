@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% include "partials/preloads.njk" %}
+
     {# Only load the code snippet if the post says so #}
     {% if code_snippet %}
       {% include "meta/prism.njk" %}
@@ -22,6 +24,7 @@
     <header>
       {% include "partials/navigation.html" %}
     </header>
+
     {{ content | safe }}
   </body>
 </html>
