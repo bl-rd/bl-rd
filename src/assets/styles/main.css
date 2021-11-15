@@ -3,7 +3,7 @@
 
 * {
   font-family: 'blocktopiamedium', monospace;
-  font-size: 2rem;
+  font-size: clamp(1.1em, 5vw, 1.8rem);
   color: var(--main-colour);
 }
 
