@@ -1,0 +1,21 @@
+:root {
+  --main-colour: #efefed;
+  --background-colour: #010101
+}
+
+@font-face {
+  font-family: blocktopiamedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/blocktopia-webfont.woff2) format("woff2"), url(/assets/fonts/blocktopia-webfont.woff) format("woff")
+}
+
+* {
+  color: var(--main-colour);
+  font-family: blocktopiamedium, monospace;
+  font-size: clamp(1.1em, 5vw, 1.8rem)
+}
+
+body {
+  background-color: var(--background-colour)
+}

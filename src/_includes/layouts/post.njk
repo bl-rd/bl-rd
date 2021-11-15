@@ -8,8 +8,13 @@
     {% if code_snippet %}
       {% include "meta/prism.njk" %}
     {% endif %}
-    
-    <link rel="stylesheet" href="{{ '/assets/styles/compiled.css' | url }}">
+
+    {% set css %}
+      {% include "styles/main.css" %}
+    {% endset %}
+    <style>
+      {{ css | safe }}
+    </style>
 
     <title>{{ title }}</title>
   </head>
