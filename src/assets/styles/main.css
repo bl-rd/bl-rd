@@ -12,3 +12,28 @@ body {
   width: clamp(850px, 80vw, 90%);
   margin: 0 auto;
 }
+
+body.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+body.home > div {
+  width: 50%;
+}
+
+body.home h1 {
+  text-align: center;
+}
+
+body.home ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+body.home li {
+  list-style: none;
+}

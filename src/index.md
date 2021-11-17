@@ -1,11 +1,26 @@
 ---
 title: "Home page"
-layout: layouts/post.njk
+layout: layouts/home.njk
 ---
 
-<h1>Home page 🎃</h1>
-
+<!-- TODO: use some data to render -->
 <ul>
+  <li>
+    <a href="/about">About</a>
+  </li>
+  <li>
+    <a href="/now">Now</a>
+  </li>
+  <li>
+    <a href="/notes">Notes</a>
+  </li>
+  <li>
+    <a href="/projects">Projects</a>
+  </li>
+</ul>
+
+
+<!-- <ul>
   {%- for post in collections.notes -%}
   <li>
     <p>
@@ -14,4 +29,4 @@ layout: layouts/post.njk
     <time>{{ post.date }}</time>
   </li>
   {%- endfor -%}
-</ul>
+</ul> -->

@@ -18,4 +18,5 @@ module.exports = function(eleventyConfig) {
 
   // pass through files
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
+  eleventyConfig.addPassthroughCopy('src/assets/scripts');
 };

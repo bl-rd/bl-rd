@@ -3,16 +3,15 @@
   <head>
     {% include "partials/head.njk" %}
   </head>
-  <body>
-    {#
-    <header>
-      {% include "partials/navigation.html" %}
-    </header>
-    #}
-
-    <h1>{{ title }}</h1>
-
-    {{ content | safe }}
+  <body class="home">
+    <div>
+      <header>
+        <h1>{{ title }}</h1>
+      </header>
+      <main>
+        {{ content | safe }}
+      </main>
+    </div>
 
     <script src="{{ '/assets/scripts/text.js' | url }}" defer></script>
   </body>
