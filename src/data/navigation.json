@@ -1,0 +1,17 @@
+[
+  {
+    "title": "home",
+    "href": "/",
+    "landingPage": false
+  },
+  {
+    "title": "about",
+    "href": "/about",
+    "landingPage": true
+  },
+  {
+    "title": "now",
+    "href": "/now",
+    "landingPage": true
+  }
+]

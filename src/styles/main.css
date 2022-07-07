@@ -1,0 +1,66 @@
+:root {
+  --font-family-heading: 'Manrope', helvetica, arial, sans-serif;
+  --font-family-body: 'Trispace', 'Courier Prime', 'FiraCode', 'JetBrains Mono', consoals, 'courier new', courier, monospace;
+  /* --font-family-body: 'Courier Prime', 'FiraCode', 'JetBrains Mono', consoals, 'courier new', courier, monospace; */
+
+  --colour-background: hsl(218, 23%, 21%);
+  --colour-text: hsl(182, 82%, 93%);
+  --colour-highlight-primary: hsl(12, 83%, 62%);
+  --colour-highlight-2: hsl(202, 46%, 72%);
+  --colour-highlight-3: hsl(214, 35%, 37%);
+}
+
+* {
+  font-family: var(--font-family-body);
+  color: var(--colour-text);
+}
+
+html {
+  background-color: var(--colour-background);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4,
+:is(h1, h2, h3, h4) > * {
+  font-family: var(--font-family-heading);
+}
+
+*[data-japanese] {
+  font-family: var(--font-family-heading, monospace);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  word-break: keep-all;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h2 {
+  margin-top: 2.2rem;
+}
+h3 {
+  margin-top: 1.7rem;
+}
+
+/* TODO: make nicer */
+h2 + p, h3 + p {
+  margin-top: 0.5rem;
+}
+:is(h2, h3, h4) + :is(h3, h4, h5) {
+  margin-top: 0.9rem;
+}
+
+a {
+  color: var(--colour-highlight-primary);
+}
+</style>
+
+<style>
+main {
+  width: auto;
+  margin: 0 auto;
+  max-width: 66ch;
+  padding: 1rem;
+}

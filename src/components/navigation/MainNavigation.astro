@@ -1,0 +1,23 @@
+---
+import data from '../../data/navigation.json';
+---
+<nav>
+  <ul>
+    {
+      data.map(x => 
+        (<li><a href={x.href}>{x.title}</a></li>)
+      )
+    }
+  </ul>
+</nav>
+
+<style>
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+</style>

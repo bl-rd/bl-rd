@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Heading from '../../components/Heading.astro';
+import BodyText from '../../components/BodyText.astro';
+
+import { Content as IntroContent } from '../../content/about/intro.md';
+import { Content as MainContent } from '../../content/about/main.md';
+---
+<Layout title="About">
+  <Heading title="About">
+    <IntroContent />
+  </Heading>
+
+  <BodyText>
+    <MainContent />
+  </BodyText>
+</Layout>

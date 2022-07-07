@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Heading from '../../components/Heading.astro';
+import BodyText from '../../components/BodyText.astro';
+
+import { Content as IntroContent } from '../../content/now/intro.md';
+import { Content as MainContent } from '../../content/now/main.md';
+---
+<Layout title="Now">
+  <Heading title="Now">
+    <IntroContent />
+  </Heading>
+
+  <BodyText>
+    <MainContent />
+  </BodyText>
+</Layout>
